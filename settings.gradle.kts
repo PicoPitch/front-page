@@ -18,6 +18,14 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        maven(url ="https://devrepo.kakao.com/nexus/content/groups/public/") // 카카오 로그인
+    }
+}
+
 
 rootProject.name = "umc_picopitch_project"
 include(":app")
